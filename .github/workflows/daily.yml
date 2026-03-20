@@ -4,14 +4,17 @@ on:
   schedule:
     - cron: "0 18 * * *"  # everyday (UTC time)
   workflow_dispatch:
-
+  
+permissions:
+  contents: write
+  
 jobs:
   commit:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repo
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Make changes
         run: |
