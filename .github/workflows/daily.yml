@@ -24,7 +24,7 @@ jobs:
       - name: Commit changes
         run: |
           git config --global user.name "VirajKosala"
-          git config --global user.email "virajkosala0204@gmail.com"
+          git config --global user.email "virajkosala020@gmail.com"
           git add .
           git commit -m "Daily auto commit" || echo "No changes"
           git push
